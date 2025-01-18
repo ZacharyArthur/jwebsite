@@ -2,14 +2,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const box = document.querySelector('.centered-box');
     let x = 0;
     let y = 0;
-    let xSpeed = 2;
-    let ySpeed = 2;
-    const boxWidth = box.offsetWidth;
-    const boxHeight = box.offsetHeight;
-    const screenWidth = window.innerWidth;
-    const screenHeight = window.innerHeight;
+    let xSpeed = 1;
+    let ySpeed = 1;
 
     function moveBox() {
+        const boxWidth = box.offsetWidth;
+        const boxHeight = box.offsetHeight;
+        const screenWidth = window.innerWidth;
+        const screenHeight = window.innerHeight;
+
         x += xSpeed;
         y += ySpeed;
 
@@ -25,4 +26,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     moveBox();
-}); 
+});

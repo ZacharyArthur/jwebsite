@@ -1,17 +1,16 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    height: 100vh;
     background-color: #000000;
+    overflow: hidden; /* Prevents scrollbars from appearing */
 }
 
 .centered-box {
+    position: absolute; /* Allows positioning with top and left */
     padding: 20px;
     border-radius: 15px;
     background: linear-gradient(45deg, #ff6b6b, #f06595);
     color: rgb(255, 255, 255);
     font-size: 24px;
     text-align: center;
-} 
+}
