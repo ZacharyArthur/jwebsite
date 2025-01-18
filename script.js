@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const box = document.querySelector('.centered-box');
     let x = 0;
     let y = 0;
-    let xSpeed = 1;
-    let ySpeed = 1;
+    let xSpeed = 0.5;
+    let ySpeed = 0.5;
 
     function moveBox() {
         const boxWidth = box.offsetWidth;
